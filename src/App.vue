@@ -26,7 +26,7 @@ if (route.query.pageSize) {
 <template>
   <div class="text-center font-sans text-gray-700 antialias">
     <header>
-     
+    
       <div class="wrapper">
         <nav class="py-6">
         <RouterLink class="font-bold text-gray-700" exact-active-class="text-green-500" :to="{name: 'event-list-view'}">Event</RouterLink>
@@ -67,15 +67,5 @@ nav a.router-link-exact-active {
 h2 {
   font-size: 20px;
 }
-@keyframes yellofade {
-  from {
-    background-color: yellow;
-  }
-  to {
-    background-color: transparent;
-  }
-}
-#flashMessage {
-  animation: yellofade 3s ease-in-out;
-}
+
 </style>

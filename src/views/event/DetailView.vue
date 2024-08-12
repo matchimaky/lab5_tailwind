@@ -16,7 +16,9 @@ const store = useMessageStore()
   <div>
   <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
   <p>{{ event.description }}</p>
-  <div v-if="store.message" class="flash-message">{{ store.message }}</div>
+  <div id="flashMessage" class="animate-fade" v-if="store.message">
+      <h4>{{ store.message }}</h4>
+    </div>
 </div>
 </template>
 <style scoped>
