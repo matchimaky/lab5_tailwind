@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import EventCard from '@/components/EventCard.vue'
 import { type Event } from '@/types'
-import CategoryOrganizer from '@/components/CategoryOrganizer.vue'
 import { ref, onMounted, computed, watchEffect } from 'vue'
 import EventService from '@/services/EventService'
 import { useRoute } from 'vue-router'
