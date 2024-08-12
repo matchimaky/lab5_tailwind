@@ -45,37 +45,32 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center">
+
     <h1>Events For Good</h1>
+    <div class="flex flex-col items-center">
     <!-- new element -->
     <EventCard v-for="event in events" key="event.id" :event="event" />
-    <CategoryOrganizer v-for="event in events" key="event.id" :event="event" />
+    <!-- <CategoryOrganizer v-for="event in events" key="event.id" :event="event" /> -->
+    <br>
     <div class="pagination">
       <RouterLink
         id="page-prev"
         :to="{ name: 'event-list-view', query: { page: page - 1, pageSize: pageSize } }"
         rel="prev"
         v-if="page != 1"
-        >&#60; Prev Page</RouterLink
-      >
+        >&#60; Prev Page</RouterLink >
 
       <RouterLink
         id="page-next"
         :to="{ name: 'event-list-view', query: { page: page + 1, pageSize: pageSize } }"
         rel="next"
         v-if="hasNexPage"
-        >Next Page &#62;</RouterLink
-      >
+        >Next Page &#62;</RouterLink>
     </div>
   </div>
 </template>
 
 <style scoped>
-.events {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .pagination {
   display: flex;
