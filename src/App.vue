@@ -24,7 +24,7 @@ if (route.query.pageSize) {
 </script>
 
 <template>
-  <div id="layout">
+  <div class="text-center font-sans text-gray-700 antialias">
     <header>
      
       <div class="wrapper">
